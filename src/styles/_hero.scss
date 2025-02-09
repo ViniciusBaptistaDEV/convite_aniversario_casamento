@@ -43,16 +43,27 @@
         background-color: variables.$tertiaryTextColor;
     }
 
-    &__logo {
+    &__titulo {
         text-align: center;
         font-size: 50px;
         display: block;
+    }
+
+    &__logo {
+        width: auto; /* Ajuste o tamanho do ícone */
+        height: 50px; /* Mantém a proporção da imagem */
+        margin-right: 10px; /* Espaço entre o ícone e o texto */
+        vertical-align: middle; /* Alinha verticalmente o ícone com o texto */
     }
 
     @media (max-width: 640px) {
         padding: 40px 0;
 
         &__logo {
+            display: none;
+        }
+
+        &__titulo {
             font-size: 32px;
         }
 
