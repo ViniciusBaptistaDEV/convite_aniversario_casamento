@@ -1,5 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    setTimeout(function() {
+        const preloader = document.querySelector('.preloader');
+        if (preloader) {
+            preloader.style.transition = 'opacity 4s'; // Adiciona transição para o fade-out
+            preloader.style.opacity = '0'; // Faz o fade-out
+            setTimeout(() => preloader.style.display = 'none', 3000); // Remove o elemento após o fade-out
+        }
+    }, 1000);
+    
+    setTimeout(function() {
+        const paginaPrincipal = document.getElementById('paginaPrincipal');
+        if (paginaPrincipal) {
+            paginaPrincipal.classList.remove('page'); // Remove a classe 'page'
+        }
+    }, 4100);
+
     AOS.init({
         duration: 2000, // Duração padrão para todas as animações
         easing: "ease-in-out", // Suavização padrão

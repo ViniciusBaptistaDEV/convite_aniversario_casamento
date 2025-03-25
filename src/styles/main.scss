@@ -27,3 +27,24 @@
         max-width: 90%;
     }
 }
+
+.page {
+    display: none;
+}
+
+.preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.bem-vindo {
+    margin-top: 10px;
+}
